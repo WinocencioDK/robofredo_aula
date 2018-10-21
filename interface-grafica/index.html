@@ -1,0 +1,48 @@
+<html>
+  <link rel="stylesheet" href="/css/bootstrap.min.css" >
+<h2>Cadastre as perguntas associadas as competências da BNCC</h2>
+<body>
+<div id="after_submit"></div>
+<form action="sucesso.html" method="POST">
+  <div class="row">
+    <label class="required" for="pergunta2">Ano</label><br />
+    <select>
+      <option value="1">1º </option>
+      <option value="2">2º</option>
+      <option value="3">3º</option>
+      <option value="4">4º</option>
+      <option value="5">5º</option>
+      <option value="6">6º</option>
+      <option value="7">7º</option>
+      <option value="8">8º</option>
+      <option value="9">9º</option>
+    </select>
+    <br />
+    <span id="p2_validation" class="error_message"></span>
+  </div>
+  <div class="row">
+    <label class="required" for="pergunta3">Área de Conhecimento</label><br />
+    <select>
+      <option value="volvo">Matemática</option>
+      <option value="saab">Ciências Humanas</option>
+      <option value="mercedes">Ciêcnias da Natureza</option>
+      <option value="audi">Linguagens e seus códigos</option>
+    </select>
+    <br />
+    <span id="p3_validation" class="error_message"></span>
+  </div>
+  <div class="row">
+    <label class="required" for="pergunta3">Tema</label><br />
+    <select>
+      <option value="volvo">Energia</option>
+      <option value="saab">Hurbanização</option>
+      <option value="mercedes">Cidadania</option>
+      <option value="audi">Estatística</option>
+      <option value="audi">Meio Ambiente</option>
+    </select>
+    <br />
+    <span id="p3_validation" class="error_message"></span>
+  </div>
+  </br>
+  <input id="submit_button" type="button" onclick="alert('Dados Gravados com sucesso!')" value="Gravar" />
+</form>  
